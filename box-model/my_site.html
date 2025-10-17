@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin:0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 5px;
+            margin: 4px;
+        }
+
+        header > nav{
+            background-color: rgb(102, 102, 102);
+            padding: 5px;
+            margin: 1px;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            margin-right: 30px;
+            
+            
+        }
+
+        nav{
+            text-align: center;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        a:hover{
+            text-decoration: underline;
+            
+        }
+        
+        main{
+            background-color: rgb(102, 102, 102);
+        }
+
+        #informativ{
+            background-color: white;
+            padding: 5px;
+            margin: 15px 5px;
+            border-radius: 20px 0px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+
+        }
+
+        #informativ > a{
+            text-decoration: none;
+            color:salmon;
+        }
+
+        #informativ > a:hover{
+            text-decoration: underline;
+            color: rgb(0, 0, 0);
+
+        }
+
+        #informativ > #paragraph{
+            background-color: rgba(139, 139, 139, 0.205);
+            text-align: justify;
+            padding:5px;
+
+        }
+
+        #secand_section > #first_arc > h2{
+            background-color: rgba(255, 255, 255, 0.582);
+           margin:5px;
+
+        }
+
+        #secand_section > #first_arc > h2:hover{
+            font-size: 2em;
+            background-color: white;
+        }
+
+        #secand_section > #first_arc > p{
+            border-radius: 20px 0px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+            background-color: white;
+            margin: 15px 5px;
+            padding:5px;
+        }
+
+        #secand_section > #secand_arc > a{
+            background-color: white;
+            text-decoration: none;
+            display: block;
+            color: rgb(0, 0, 0);
+            margin: 5px;
+            padding:5px;
+        }
+
+        #secand_section > #secand_arc > a:hover{
+
+            display: inline;
+            text-decoration: underline;
+            color: white;
+            background-color: rgba(183, 183, 184, 0.486);
+            margin-bottom: 15px;
+            padding: 5px;
+
+            
+        }
+
+        #secand_section > #secand_arc > a::before{
+            content: "→"
+            
+        }
+
+        #secand_section > #secand_arc > a::after{
+            content: "←";
+        }
+        footer{
+
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding:10px;
+            margin: 10px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>My site</h1>
+        <nav>
+
+            <a href="#"> link</a> <a href="#">link</a> <a href="#">link</a> <a href="#">link</a>
+        </nav>
+
+    </header>
+
+    <main>
+            <section id="informativ">
+                <h2>Sessão informativa</h2>
+
+                <h3>Desporto, Magazine, Moda Beleza </h3>
+                    <p>Tudo oque precisar emcontr-se aqui</p>
+
+                    <a href="#">@quais os planos para o futuro!</a>
+
+                    <p id="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam saepe consequuntur inventore obcaecati possimus architecto pariatur, quaerat sint asperiores iusto deleniti fugit dolor adipisci nam aliquam eaque dicta assumenda?</p>
+
+            </section>
+
+            <section id="secand_section">
+                <article id="first_arc">
+
+                    <h2>Notícias em destaques!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam sed sapiente quo officia, quidem, temporibus, nihil ea dolore doloremque rerum vitae? Ratione accusamus dicta alias in sapiente laborum ipsum perspiciatis?</p>
+
+                </article>
+
+                <article id="secand_arc">
+                    <a href="https://web.facebook.com/estanislau.larito" target="_blank" > Este artigo foi escrito por Hilário dos Santos </a>
+                </article>
+
+            </section>
+
+    </main>
+
+    <footer>
+        Desenvolvido por teste de mandioca!
+
+    </footer>
+
+</body>
+</html>
